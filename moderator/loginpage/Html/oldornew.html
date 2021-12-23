@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<title>Asset</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+background-size: 1526px 967px;
+background-repeat: no-repeat;
+  background-image: url('test.jpg');
+}
+
+div.a {
+  text-align: center;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.center {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+}
+.button {
+	  padding: 20px 25px;
+	  font-size: 24px;
+	  text-align: center;
+	  cursor: pointer;
+	  outline: none;
+	  color: black;
+	  background-color: white;
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px #999;
+	  transition: 0.3s;
+}
+
+
+.button:hover {
+	background-color: #f4511e;
+	color: white;
+ }
+
+.button:active {
+	background-color:#f4511e;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.table{
+	width: 100%
+}
+.text {
+	font-family: "Audiowide", sans-serif;
+	color:white;
+	text-align:center;
+	font-size:65px;
+	position:relative;
+	bottom:205px;	 
+}
+.wel{
+	font-family: "Audiowide", sans-serif;
+	color:white;
+	text-align:center;
+	font-size:40px;
+	position:relative;
+	bottom:240px;	 
+}	
+.responsive{
+	width:13%;
+	height:auto;
+}
+.response{
+	width:13%;
+	height:auto;
+	position:relative;
+	top:0px;
+	left:1100px;
+	border-radius:40%;
+	
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .html, .body {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+<body>
+<div class="a">
+</div>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<img src="..\images\login.png" class="responsive">
+<img src="..\images\logo.png" class="response">
+<h1 class="text">Regenboog India Foundation</h1>
+<h2 class="wel"></h2>
+<div class="center">
+<table class="table">
+	<tr>
+    	<td><button class="button" onclick="document.location='scanner.html'">Update old asserts</button></td>
+        <td><button class="button" onclick="document.location='scanners.html'">Insert new asserts</button></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

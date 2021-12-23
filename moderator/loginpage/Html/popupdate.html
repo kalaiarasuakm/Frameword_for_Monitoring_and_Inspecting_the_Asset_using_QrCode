@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 25%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 0px;
+  background-color:#FFA07A;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 11px 0px;
+  background-color: #FFA07A;
+  color: white;
+}
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FFA07A;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px #999;
+  font-family: "Audiowide", sans-serif;
+  
+}
+.button:hover {background-color: #E9967A}
+
+.button:active {
+  background-color: #FA8072;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.text {
+	 font-family: "Audiowide", sans-serif;
+	 color:white;
+	 text-align:center;
+	 font-size:50px;
+}
+.wel{
+	font-family: "Audiowide", sans-serif;
+	 color:dodgerblue;
+	 text-align:center;
+	 font-size:25px;
+}
+#button1{
+	float:center;
+}
+#button2{
+	float:right;
+}
+
+</style>
+</head>
+<body>
+<!-- The Modal -->
+<div id="myModal" class="myBtn" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 class="text">Regenboog India Foundation</h2>
+    </div>
+    <div class="modal-body">
+      <p class="wel">Records were updated successfully</p>
+      
+    </div>
+    <div class="modal-footer">
+      <a href="scanner.html" class="button" >Continue to update records</a>
+      <a href="scanners.html" class="button" id="button1">Add records</a>
+	  <a href="logout1.php" class="button" id="button2">Logout</a>
+	  
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

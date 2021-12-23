@@ -1,0 +1,224 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="bootstrap.min.js"></script>
+</head>
+<title>Admin</title>
+
+<style type="text/css">
+	body {
+    background: url('background1.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Montserrat;
+    margin: 0px;
+
+}
+
+.logo {
+    width: 213px;
+    height: 36px;
+    margin: 30px auto;
+
+}
+.logo img
+{
+    margin-left: 35px;
+    width: 100px;
+}
+
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
+#section1
+{
+    border-top: 3px solid #FC748B;
+    width: 100%;
+    height: 55%;
+    margin: 0 auto;
+    padding:0px;
+    display:inline-block;
+    *display:inline;zoom:1;
+    margin:0px;outline:none;
+    /*border-bottom: 1px solid transform ;*/
+    
+}
+#section2
+{
+    position: relative;
+  
+    width: 100%;
+    height: 39%;
+    margin: 0px;
+    padding:0px;
+    display:inline-block;
+    *display:inline;zoom:1;
+    margin:0px;outline:none;
+    border-bottom: 3px solid #EDDF8E;
+  
+
+}
+#section3
+{
+    width: 100%;
+    height: 6%;
+    margin: 0px;
+    padding:0px;
+    display:inline-block;
+    *display:inline;zoom:1;
+    margin:0px;outline:none;
+    /*background-color: #ccebff;*/
+    background-color: #f8f8f8;
+    border-top: 2px solid #74D3F2;
+
+}
+#mainsection
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+
+
+
+}
+img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+
+
+     -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+}
+img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+
+#Imgcontent
+{
+    margin-top: 61px;
+    margin-left: 350px;
+    width: 100%;
+    height: 100%;
+}
+span
+{
+    margin-right: 25px;
+}
+    
+
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+</style>
+<body>
+<script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({html:true});  
+
+        });
+
+</script>
+
+
+<div id="mainsection">
+    <div id="section1">
+         <div class="logo"><img src="login.png"></div>
+         <br><br><br>
+        <div class="login-block">
+            <h1>Administration Login</h1>
+			<form action="insert.php" method="post">
+            <input type="text" name="username" value="" placeholder="username" id="username" />
+            <input type="password" name="password" value="" placeholder="password" id="password" />
+			<button type="submit" name="submit">Submit</button>
+			
+        </div>
+ 
+    
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,2 @@
+# Frameword_for_Monitoring_and_Inspecting_the_Asset_using_QrCode
+ 
